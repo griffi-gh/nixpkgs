@@ -1,0 +1,10 @@
+diff --git a/build.sbt b/build.sbt
+index fd1070e..53a10db 100644
+--- a/build.sbt
++++ b/build.sbt
+@@ -43,3 +43,5 @@ assembly / assemblyMergeStrategy := {
+ }
+ 
+ assembly / assemblyJarName := "ocelot-desktop.jar"
++
++ThisBuild / useCoursier := true
