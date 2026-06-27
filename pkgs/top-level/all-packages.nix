@@ -11270,4 +11270,14 @@ with pkgs;
     enableWayland = false;
     enableX11 = true;
   };
+
+  lore-client = callPackage ../by-name/lo/lore/package.nix;
+  lore-server = callPackage ../by-name/lo/lore/package.nix {
+    buildClient = false;
+    buildServer = true;
+  };
+  lore-full = callPackage ../by-name/lo/lore/package.nix {
+    buildClient = true;
+    buildServer = true;
+  };
 }
